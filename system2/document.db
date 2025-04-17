@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS your_database_name;
+USE your_database_name;
+
+CREATE TABLE IF NOT EXISTS documents (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    document_number VARCHAR(255) UNIQUE NOT NULL,
+    document_name VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
